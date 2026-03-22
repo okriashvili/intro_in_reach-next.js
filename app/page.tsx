@@ -1,9 +1,22 @@
 import Image from "next/image";
 
+// we can build our own payges, and import them in page.tsx to display on our web
+// f.e: I created greeting page, where I'm displaying the hello and user name
+// I've imported that page in page.tsx, now lets add in our website 
+import { GreetButton } from "@/components/greet";
+// Create my attribute
+import { TestFunc } from "@/app/test"
+
+
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+        {/* adding cutstom made greeting paragraph */}
+        <GreetButton />
+        {/* display list, onwhich we used map function to disolay each of them independently */}
+        <TestFunc/>
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -14,7 +27,7 @@ export default function Home() {
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+            To get started, edit the page.tsx file&nbsp;
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}

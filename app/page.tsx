@@ -3,10 +3,9 @@ import Image from "next/image";
 // we can build our own payges, and import them in page.tsx to display on our web
 // f.e: I created greeting page, where I'm displaying the hello and user name
 // I've imported that page in page.tsx, now lets add in our website 
-import { GreetButton } from "@/components/greet";
-// Create my attribute
-import { TestFunc } from "@/app/test"
-
+import { GreetButton } from "@/my_components/greet";
+import { TestFunc, TestInineStyle } from "@/my_components/test";
+import {footer as Footer} from "@/my_components/footer"
 
 
 export default function Home() {
@@ -17,6 +16,8 @@ export default function Home() {
         <GreetButton />
         {/* display list, onwhich we used map function to disolay each of them independently */}
         <TestFunc/>
+        <TestInineStyle/>
+        < Footer />
         <Image
           className="dark:invert"
           src="/next.svg"

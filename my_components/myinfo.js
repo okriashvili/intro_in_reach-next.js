@@ -11,8 +11,5 @@ let myInfo = [
     },
 ]
 
-
 // console.log(myInfo.);
-
-
 export { myInfo }

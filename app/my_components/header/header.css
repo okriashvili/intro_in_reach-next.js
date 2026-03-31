@@ -17,20 +17,22 @@ span {
 
 }
 
-
 .header {
+
     position: relative;
     color: white;
     display: inline;
-    right: 10px;
+    margin-right: 20px;
     float: right;
+
 }
 
-
 .p {
+
     position: absolute;
     left: 10px;
     color: aqua;
+
 }
 
 .block {

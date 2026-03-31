@@ -1,16 +1,19 @@
-import "@/css/style.css"
 import { title } from "process";
+// import stili from "./components.css"
+import "./components.css"
+
+
 // when we are creating variable  we must use let/var/const keywords
 const courses = ["React", "UI/UX", "Django"];
 
-// let course = courses.map(x => x);
+
 
 export const TestFunc = () => {
 
     return (
-        <h3>
+        <h3 className="container">
             {/* {} all JS code are written inside this curly braces in JSX, */}
-            {courses.map(x => <p> {x} </p>)}
+            {courses.map(x => <p key={x}> {x} </p>)}
             {/* {courses.map(x => <p> {x} </p>)} */}
         </h3>
 

@@ -1,11 +1,16 @@
+"use client"; 
+// its rendering on server, if we want to render it on client, 
+// we need to add this line on top of our file, 
+
+
 import Image from "next/image";
 
 // we can build our own payges, and import them in page.tsx to display on our web
 // f.e: I created greeting page, where I'm displaying the hello and user name
 // I've imported that page in page.tsx, now lets add in our website 
-import { GreetButton } from "@/my_components/greet";
-import { TestFunc, TestInineStyle } from "@/my_components/test";
-import {footer as Footer} from "@/my_components/footer"
+import { TestFunc as TestFunc, TestInineStyle } from "@/app/my_components/test";
+
+
 
 
 export default function Home() {
@@ -13,11 +18,9 @@ export default function Home() {
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         {/* adding cutstom made greeting paragraph */}
-        <GreetButton />
         {/* display list, onwhich we used map function to disolay each of them independently */}
         <TestFunc/>
         <TestInineStyle/>
-        < Footer />
         <Image
           className="dark:invert"
           src="/next.svg"

@@ -1,6 +1,6 @@
 // we created greet paragraph, where we display hello and user name, name changes according to the users
 // we are retrieveing user infromation from the myInfo js
-import { myInfo as user } from "@/app/header/myinfo";
+// import { myInfo as user } from "@/app/header/myinfo";
 // we can link our css by importing the css file
 // unlike regular import, we don't use the from or function name here
 // if we name our css file as name > .module.css, we can import it as styles, and use it as styles.className in {} like js object

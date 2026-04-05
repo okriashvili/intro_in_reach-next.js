@@ -7,5 +7,11 @@
     /* background-color: tomato; */
     height: 75px;
     float: left;
+    color: black;
+    position: absolute;
+    bottom: 0px;
+    overflow: hidden;
+    gap: 20px;
+    float: right;
 
 }

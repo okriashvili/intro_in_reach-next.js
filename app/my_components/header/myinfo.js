@@ -11,5 +11,10 @@ let myInfo = [
     },
 ]
 
-// console.log(myInfo.);
-export { myInfo }
+// console.log(myInfo);
+export { myInfo };
+
+
+
+let lst = ["hello", "world", "my", "name", "is", "malkhaz    ", "."];
+// console.log(lst.join(" ").trim);

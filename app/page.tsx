@@ -10,6 +10,11 @@ import Image from "next/image";
 // I've imported that page in page.tsx, now lets add in our website 
 import { TestFunc as TestFunc, TestInineStyle } from "@/app/my_components/test";
 import Button from "@/app/my_components/button/button";
+import Counter from "@/app/my_components/increase_decrease/counter";
+import Input from "./my_components/inputs/input";
+import MyAcordeon from "./my_components/myacordeon/acordeon";
+import ChangeWveni from "./my_components/test_useState/test"
+import TodoList from "./my_components/to_do_list/todo"
 
 
 
@@ -20,16 +25,21 @@ export default function Home() {
         {/* adding cutstom made greeting paragraph */}
         {/* display list, onwhich we used map function to disolay each of them independently */}
         {/* <TestFunc/>
-        <TestInineStyle/> */}
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <Button title="disabled" disabled={true}/>
-       
+        // <TestInineStyle/> */}
+        {/* <br/> <br/> */}
+        {/* <Button title="disabled" disabled={true}/>
         <Button title="mode fill"/> 
-      
-        <Button title="mode outline" mode="outline"/> 
+        <Button title="mode outline" mode="outline"/>  */}
+        {/* <br/> <br/> <br/>   */}
+        <Counter/>
 
-
-
+        <br/> <br/>
+        <Input />  
+        <br/> <br/> <br/>
+        <MyAcordeon />
+        <br /><br /><br />
+        <ChangeWveni />  
+        <TodoList />
 
 
 

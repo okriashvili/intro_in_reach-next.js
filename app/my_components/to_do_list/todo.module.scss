@@ -1,0 +1,38 @@
+// @import { randomColor } "./todo.jsx";
+.container {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+}
+
+
+.myInput {
+    height: 30px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+
+.mybutton {
+    height: 35px;
+    width: 30px;
+    font-size: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
+    background-color: wheat;
+    position: relative;
+
+}
+
+
+.mylist {
+    list-style: none;
+    position: relative;
+    left: -35px;
+    color: darkmagenta;
+    display: block;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+
+}

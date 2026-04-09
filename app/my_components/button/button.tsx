@@ -1,4 +1,4 @@
-import { createExhaustiveURLSearchParamsProxy } from "next/dist/server/app-render/instant-validation/instant-samples";
+// import { createExhaustiveURLSearchParamsProxy } from "next/dist/server/app-render/instant-validation/instant-samples";
 import styles from "./Button.module.scss"
 
 type myProps = {

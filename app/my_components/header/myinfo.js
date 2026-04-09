@@ -1,3 +1,5 @@
+import { type } from "node:os";
+
 let myInfo = [
     {
         name : "Malkhaz",
@@ -18,3 +20,5 @@ export { myInfo };
 
 let lst = ["hello", "world", "my", "name", "is", "malkhaz    ", "."];
 // console.log(lst.join(" ").trim);
+
+
